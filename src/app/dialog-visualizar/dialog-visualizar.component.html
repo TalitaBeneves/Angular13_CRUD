@@ -1,0 +1,44 @@
+<h1 mat-dialog-title>Visualizar Produto</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Produtos</mat-label>
+      <input
+        formControlName="nome"
+        matInput
+        placeholder="Nome"
+        [disabled]="true"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Categoria</mat-label>
+      <mat-select formControlName="categoria" placeholder="Categoria">
+        <mat-option value="Frutas">Frutas</mat-option>
+        <mat-option value="Vegetais">Vegetais</mat-option>
+        <mat-option value="Eletronico">Eletronico</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input formControlName="data" matInput [matDatepicker]="picker" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Preço</mat-label>
+      <input
+        formControlName="preco"
+        matInput
+        type="number"
+        placeholder="Preço"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Comentario</mat-label>
+      <textarea formControlName="comentario" matInput></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button mat-dialog-close color="warn">Fechar</button>
+</div>

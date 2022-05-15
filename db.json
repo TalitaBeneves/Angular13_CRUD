@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "nome": "Notebook",
+      "categoria": "Eletronico",
+      "data": "2022-05-14T03:00:00.000Z",
+      "produto": "Second Hand",
+      "preco": 3000,
+      "comentario": "aaaaaaaaaaaaaa",
+      "id": 4
+    },
+    {
+      "nome": "Teclad",
+      "categoria": "Eletronico",
+      "data": "2022-05-14T03:00:00.000Z",
+      "produto": "Brand New",
+      "preco": 200,
+      "comentario": "Adicionando o Teclado",
+      "id": 5
+    },
+    {
+      "nome": "Mouse",
+      "categoria": "Eletronico",
+      "data": "2022-05-15T03:00:00.000Z",
+      "produto": "Second Hand",
+      "preco": 150,
+      "comentario": "",
+      "id": 7
+    },
+    {
+      "nome": "Mouse Pad",
+      "categoria": "Eletronico",
+      "data": "2022-05-15T03:00:00.000Z",
+      "produto": "Brand New",
+      "preco": 100,
+      "comentario": "",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
